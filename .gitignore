@@ -1,0 +1,22 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Common
+.idea
+*.map
+
+# Vim
+.projections.json
+
+# VsCode
+.vscode
+
+# Logs
+logs
+*.log
+
