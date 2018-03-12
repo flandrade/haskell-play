@@ -8,10 +8,10 @@ A monoid is an algebraic structure with an associative binary operation and has 
 
 ```haskell
 class Monoid m where
-mempty :: m
-mappend :: m -> m -> m
-mconcat :: [m] -> m
-mconcat = foldr mappend mempty
+  mempty :: m
+  mappend :: m -> m -> m
+  mconcat :: [m] -> m
+  mconcat = foldr mappend mempty
 ```
 
 - `mappend` `(<>)` defines how two values that inhabit the type can be joined together. 
@@ -85,7 +85,6 @@ It's a value that turns the operation into the identity function.
 mappend x mempty = x 
 mappend mempty x = x
 ```
-
 
 In general:
 
