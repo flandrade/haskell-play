@@ -2,9 +2,9 @@ name:                ApplicativeFunctors
 version:             0.1.0.0
 github:              "githubuser/ApplicativeFunctors"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2018 Author name here"
+author:              "Fernanda Andrade"
+maintainer:          "andradeferu@gmail.com"
+copyright:           "2018 Fernanda Andrade"
 
 extra-source-files:
 - README.md
@@ -48,3 +48,4 @@ tests:
     - ApplicativeFunctors
     - hspec
     - QuickCheck
+    - checkers

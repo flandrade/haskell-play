@@ -48,3 +48,4 @@ tests:
     - Monads
     - hspec
     - QuickCheck
+    - checkers
