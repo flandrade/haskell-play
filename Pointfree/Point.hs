@@ -3,7 +3,6 @@ module Point where
 getValue1 :: [Integer] -> Integer -> [Integer]
 getValue1 list value = tail (take 5 (map (value+) list))
 
--- | Add comment referring to infix precedence. 
 getValue2 :: [Integer] -> Integer -> [Integer]
 getValue2 list value = tail $ take 5 $ map (value+) list
 
