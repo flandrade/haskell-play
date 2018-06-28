@@ -1,0 +1,51 @@
+name:                ApplicativeFunctors
+version:             0.1.0.0
+github:              "githubuser/ApplicativeFunctors"
+license:             BSD3
+author:              "Fernanda Andrade"
+maintainer:          "andradeferu@gmail.com"
+copyright:           "2018 Fernanda Andrade"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on Github at <https://github.com/githubuser/ApplicativeFunctors#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  ApplicativeFunctors-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ApplicativeFunctors
+
+tests:
+  ApplicativeFunctors-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ApplicativeFunctors
+    - hspec
+    - QuickCheck
+    - checkers
